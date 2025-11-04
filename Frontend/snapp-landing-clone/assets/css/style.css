@@ -1,0 +1,32 @@
+/* ========== Header ========== */
+
+.site-header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 1px 46px rgb(23 135 23 / 22%);
+  z-index: 100;
+}
+
+.site-header .container {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.nav__item a {
+  font-weight: 300;
+  color: #000;
+  text-decoration: none;
+}
