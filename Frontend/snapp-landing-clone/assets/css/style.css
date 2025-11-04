@@ -345,3 +345,71 @@
   color: rgb(97, 97, 97);
   line-height: 1.35rem;
 }
+
+/* ================================
+   ≥ 480px — small phones / large phones
+=================================== */
+@media (min-width: 480px) {
+}
+
+/* ================================
+   ≥ 768px — tablets
+=================================== */
+@media (min-width: 768px) {
+  .tools__description {
+    display: block;
+  }
+}
+
+/* ================================
+   ≥ 1024px — small laptops/desktops
+=================================== */
+@media (min-width: 1024px) {
+  /* ========== Header ========== */
+
+  .site-header .container {
+    padding: 2rem 5%;
+  }
+
+  /* ========== Hero ========== */
+
+  .hero__box {
+    padding: 2rem 4rem;
+  }
+
+  /* ========== Tools ========== */
+  .tools__item {
+    flex-direction: row;
+    justify-content: start;
+  }
+  .tools__content {
+    text-align: start;
+  }
+  .tools__list {
+    align-items: center;
+  }
+}
+
+/* ================================
+   ≥ 1280px — wide desktops
+=================================== */
+@media (min-width: 1441px) {
+  .site-header .container {
+    padding: 2rem 11%;
+  }
+  .tools__list {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(21rem, (100% - (2 * 1.5rem)) / 3), 1fr)
+    );
+  }
+  .tools__item {
+    grid-column: span 1;
+  }
+  .tools__item:nth-last-child(1) {
+    grid-column: span 1;
+  }
+  .tools__item:nth-last-child(2) {
+    grid-column: span 1;
+  }
+}
