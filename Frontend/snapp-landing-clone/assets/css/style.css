@@ -30,3 +30,108 @@
   color: #000;
   text-decoration: none;
 }
+
+/* ========== Hero ========== */
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  background-color: #21aa58;
+  width: 100%;
+}
+
+.hero__content {
+  color: #fff;
+}
+
+.hero__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: auto;
+  max-width: 70rem;
+  padding: 2rem 2rem 2rem 4rem;
+}
+
+.hero__title {
+  font-weight: bold;
+  font-size: 2.3rem;
+  line-height: 4.2rem;
+  text-align: start;
+  text-wrap: balance;
+  margin-bottom: 1.2rem;
+}
+
+.hero__description {
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+  text-align: start;
+  margin-bottom: 0.4rem;
+}
+
+.hero__form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero__input-box {
+  display: flex;
+  align-items: center;
+  flex-basis: 60%;
+  padding: 0 0.4rem;
+  border-bottom-width: 1px;
+  border-color: #fff;
+  border-style: solid;
+  width: fit-content;
+}
+
+.hero__input-box input::placeholder {
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.hero__input-box input:focus {
+  border-width: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+.hero__form > button {
+  background-color: #fff;
+  color: #21aa58;
+  padding: 1rem;
+  border-radius: 7px;
+  font-size: 0.9rem;
+  min-width: 4rem;
+}
+
+.hero__app-btn {
+  background-color: transparent;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 7px;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  width: 100%;
+  font-weight: bold;
+}
+
+.hero__content,
+.hero__media {
+  flex: 1 1 50%;
+}
+
+.hero__media span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: url(../Images/Public/intro_desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateY(180deg);
+}
