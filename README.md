@@ -28,5 +28,5 @@ All projects are provided *as is*, created for practice and experimentation only
 
 ---
 
-**Author:** Mohammad Kamyar Taslimi  
+**Author:** Kamyar Taslimi  
 [GitHub](https://github.com/kamyar-taslimi)
