@@ -135,3 +135,21 @@
   background-size: cover;
   transform: rotateY(180deg);
 }
+
+/* ========== Download ========== */
+
+.downloads {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 3rem;
+}
+
+.downloads__item > img {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  border-radius: 11px;
+}
