@@ -309,8 +309,12 @@
 
 .highlights__card-media {
   margin-inline: auto;
-  width: 13.125rem;
-  height: 11.875rem;
+  width: 100%;
+  max-width: 13rem;
+  text-align: center;
+  display: block;
+  aspect-ratio: 157 / 148;
+  padding: 1rem;
 }
 
 .highlights__card-media span {
