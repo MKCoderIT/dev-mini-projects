@@ -236,6 +236,7 @@
   box-shadow: 0px 0px 4px 1px white;
   border-radius: 28px;
   transform: rotate(-9deg);
+  animation: Discount-Tools 1s infinite alternate;
 }
 
 /* ========== Slide ========== */
@@ -529,5 +530,14 @@
   }
   .tools__item:nth-last-child(2) {
     grid-column: span 1;
+  }
+}
+
+@keyframes Discount-Tools {
+  0% {
+    opacity: 1.1;
+  }
+  100% {
+    opacity: 0.8;
   }
 }
