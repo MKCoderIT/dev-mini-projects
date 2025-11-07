@@ -465,6 +465,50 @@
   font-size: 0.9rem;
 }
 
+/* ========== Footer ========== */
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.footer__nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer__nav-item a {
+  text-decoration: none;
+  color: #2a3046;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer__social img {
+  width: 28px;
+  height: 28px;
+}
+.footer__badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer__badge {
+  width: fit-content;
+  height: auto;
+}
+
 /* ================================
    ≥ 480px — small phones / large phones
 =================================== */
