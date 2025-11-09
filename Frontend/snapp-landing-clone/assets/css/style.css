@@ -96,7 +96,6 @@
 
 .nav__item {
     position: relative;
-    ;
 }
 
 .nav__item>a {
@@ -115,6 +114,7 @@
     height: var(--svg-bhw-size);
     fill: currentColor;
     transition: transform .2s ease;
+    will-change: transform;
 }
 
 .nav__item:hover>a>svg,
@@ -139,23 +139,24 @@
 }
 
 .nav__submenu--unorderlist {
+    display: flex;
     background-color: var(--c-white);
     width: var(--sm-base-box);
     padding: var(--sp-07);
-    display: none;
     flex-direction: column;
     gap: var(--sp-05);
     border: var(--b-header-sm-box);
     border-radius: var(--br-base);
-}
+    opacity: 0;
+    transition: opacity .4s ease;
+    will-change: opacity;
+    visibility: hidden;
+    pointer-events: none;
 
-.nav__item:hover .nav__submenu--unorderlist,
-.nav__submenu:hover .nav__submenu--unorderlist,
-.nav__item:focus-within .nav__submenu--unorderlist {
-    display: flex;
 }
 
 .nav__submenu-item {
+    display: none;
     padding: var(--sp-02);
     line-height: var(--f-lh-normal);
 }
@@ -167,10 +168,23 @@
     font-size: var(--f-md);
 }
 
-.nav__item .nav__submenu-item:hover a ,
-.nav__item a:hover{
-    font-weight: 600;
+.nav__item .nav__submenu-item:hover a,
+.nav__item a:hover {
     color: var(--c-green);
+}
+
+.nav__item:hover .nav__submenu--unorderlist,
+.nav__submenu:hover .nav__submenu--unorderlist,
+.nav__item:focus-within .nav__submenu--unorderlist {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.nav__item:hover .nav__submenu--unorderlist .nav__submenu-item,
+.nav__submenu:hover .nav__submenu--unorderlist .nav__submenu-item,
+.nav__item:focus-within .nav__submenu--unorderlist .nav__submenu-item {
+    display: block;
 }
 
 /* ========== Hero ========== */
